@@ -20,7 +20,7 @@ export async function appRoutes(app: FastifyInstance) {
         habitWeekDays: {
           create: habitWeekDays.map((weekDay) => {
             return {
-              weed_day: weekDay,
+              week_day: weekDay,
             };
           }),
         },
@@ -46,7 +46,7 @@ export async function appRoutes(app: FastifyInstance) {
         },
         habitWeekDays: {
           some: {
-            weed_day: weekDay,
+            week_day: weekDay,
           },
         },
       },
