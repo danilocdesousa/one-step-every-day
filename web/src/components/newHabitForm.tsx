@@ -23,7 +23,7 @@ export function NewHabitForm() {
 
   function handleToggleWeedDay(weekDay: number) {
     if (weekDays.includes(weekDay)) {
-      const weekDaysWithRemovedOne = weekDays.filter((day) => day === weekDay);
+      const weekDaysWithRemovedOne = weekDays.filter((day) => day !== weekDay);
       setWeekDays(weekDaysWithRemovedOne);
     } else {
       const weekDayWithAddedOne = [...weekDays, weekDay];
